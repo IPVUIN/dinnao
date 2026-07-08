@@ -1,6 +1,7 @@
+import type { ReactNode } from "react";
 import { channels } from "@/lib/data";
 
-const ICONS: Record<string, JSX.Element> = {
+const ICONS: Record<string, ReactNode> = {
   live: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
       <circle cx="12" cy="12" r="3" />
