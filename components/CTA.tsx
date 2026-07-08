@@ -5,7 +5,8 @@ export default function CTA() {
         <span className="eyebrow" style={{ color: "var(--leaf-light)" }}>
           พร้อมฟื้นฟูดินของคุณแล้วหรือยัง
         </span>
-        <h2 data-reveal>คืนความร่วนซุยให้ผืนดิน เริ่มต้นวันนี้</h2>
+        <h2 data-reveal>คืนความร่วนซุยให้ผืนดิน 
+         <br/> เริ่มต้นวันนี้</h2>
         <p>ทักหาเราเพื่อสอบถามข้อมูลสินค้า วิธีใช้ และช่องทางการสั่งซื้อดินเน่าสำหรับแปลงของคุณ</p>
         <div className="cta-buttons">
           {/* TODO: เปลี่ยน href เป็นลิงก์ LINE OA จริง */}
