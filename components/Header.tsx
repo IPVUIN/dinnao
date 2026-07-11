@@ -1,24 +1,25 @@
+import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   return (
     <header className="nav">
       <div className="nav-inner">
-        <a href="#top" className="logo">
-          <span className="dot" />
-          ดินเน่า
+        <a href="#top" className="logo" aria-label="Dinnao Shop กลับขึ้นด้านบน">
+          <Image src="/logo.jpg" alt="โลโก้ Dinnao Shop" width={52} height={52} className="logo-img" />
         </a>
         <nav className="links">
-          <a href="#channels">ช่องทางสั่งซื้อ</a>
-          <a href="#intro">ดินเน่าคืออะไร</a>{" "}
-          <a href="#products">สินค้าในเครือ</a>
-          <a href="#features">จุดเด่น</a>
-          <a href="#crops">ใช้ได้กับพืชอะไรบ้าง</a>
+          <a href="#top">หน้าแรก</a>
+          <a href="#channels">ช่องทาง</a>
+          <a href="#about">เกี่ยวกับ</a>
+          <a href="#crops">พืชที่ใช้ได้</a>
+          <a href="#results">ผลลัพธ์</a>
+          <a href="#products">สินค้า</a>
         </nav>
         <div className="nav-actions">
           <ThemeToggle />
           <a href="#channels" className="btn btn-primary navcta">
-            สั่งซื้อดินเน่า
+            สั่งซื้อ
           </a>
         </div>
       </div>

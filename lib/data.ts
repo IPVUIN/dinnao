@@ -95,44 +95,12 @@ export const products: Product[] = [
   },
 ];
 
-export type Feature = { title: string; desc: string };
-
-export const features: Feature[] = [
-  { title: "ฟื้นฟูดินเสื่อม ดินแน่น ดินแข็ง", desc: "ปรับโครงสร้างดินให้กลับมาร่วนซุย เหมาะกับการเจริญเติบโตของราก" },
-  { title: "เพิ่มจุลินทรีย์ที่เป็นประโยชน์", desc: "เติมสิ่งมีชีวิตในดินที่ช่วยย่อยสลายอินทรียวัตถุและปลดปล่อยธาตุอาหาร" },
-  { title: "กระตุ้นการแตกราก รากแข็งแรง", desc: "ส่งเสริมให้รากฝอยแตกตัวได้ดี ชอนไชหาอาหารได้กว้างขึ้น" },
-  { title: "ดูดซึมธาตุอาหารได้ดี", desc: "เมื่อรากสมบูรณ์ พืชจะนำธาตุอาหารจากปุ๋ยไปใช้ได้เต็มประสิทธิภาพ" },
-  { title: "ลดปัญหารากเน่า โคนเน่า", desc: "ปรับสมดุลดินเพื่อลดสภาวะที่เอื้อต่อการเกิดโรครากเน่าโคนเน่า" },
-  { title: "อุ้มน้ำและระบายน้ำดีขึ้น", desc: "ดินที่ร่วนซุยช่วยให้น้ำซึมผ่านและกักเก็บได้อย่างสมดุล" },
-  { title: "ใช้ได้กับพืชทุกชนิด", desc: "ตั้งแต่นาข้าว พืชไร่ ไปจนถึงไม้ผลและผักทุกประเภท" },
-];
-
-export const crops: string[] = [
-  "นาข้าว", "อ้อย", "มันสำปะหลัง", "ข้าวโพด", "ยางพารา", "ปาล์มน้ำมัน",
-  "ทุเรียน", "มังคุด", "ลำไย", "มะม่วง", "ผักทุกชนิด", "ไม้ผลทุกประเภท",
-];
-
-export type Channel = {
-  id: string;
-  label: string;
-  placeholder: string;
-  href: string;
-  colorClass: string;
-};
-
 export const LINKS = {
   facebook: "https://www.facebook.com/profile.php?id=61589208462233",
   tiktok: "https://www.tiktok.com/@dinnao88",
   shopee: "https://shopee.co.th/shop/1859111079",
   live: "http://www.zabbtv.com/",
 };
-
-export const channels: Channel[] = [
-  { id: "live", label: "ดูไลฟ์สด", placeholder: "รับชมรายการไลฟ์สดของเราได้ที่ ZabbTV", href: LINKS.live, colorClass: "bg-live" },
-  { id: "facebook", label: "Facebook Page", placeholder: "ติดตามข่าวสารและโปรโมชันทางเพจ Facebook", href: LINKS.facebook, colorClass: "bg-fb" },
-  { id: "tiktok", label: "TikTok", placeholder: "ชมคลิปสาระเกษตรสั้น ๆ ได้ที่ @dinnao88", href: LINKS.tiktok, colorClass: "bg-tiktok" },
-  { id: "shopee", label: "Shopee", placeholder: "สั่งซื้อออนไลน์ Shopee", href: LINKS.shopee, colorClass: "bg-shopee" },
-];
 
 export const PHONE_DISPLAY = "063-275-4444";
 export const PHONE_TEL = "0632754444";

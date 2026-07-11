@@ -1,46 +1,45 @@
 import Image from "next/image";
-import Divider from "./Divider";
+
+const HIGHLIGHTS = [
+  "ฟื้นฟูดินเสื่อม ดินแน่น ดินแข็ง",
+  "เพิ่มจุลินทรีย์ที่เป็นประโยชน์ในดิน",
+  "กระตุ้นการแตกราก รากแข็งแรง",
+  "ช่วยให้พืชดูดซึมธาตุอาหารได้ดี",
+  "ลดปัญหารากเน่า โคนเน่า จากสภาพดิน",
+  "ช่วยให้ดินอุ้มน้ำและระบายน้ำดีขึ้น",
+  "ใช้ได้กับพืชทุกชนิด",
+];
 
 export default function Intro() {
   return (
-    <section className="intro" id="intro">
-      <div className="wrap intro-grid">
+    <section className="about" id="about">
+      <div className="wrap about-grid">
         <div data-reveal>
           <span className="eyebrow">ทำความรู้จัก</span>
           <h2>ดินเน่า คืออะไร</h2>
           <p>
-            ดินเน่า เป็นผลิตภัณฑ์ปรับปรุงบำรุงดิน ช่วยฟื้นฟูสภาพดินให้ร่วนซุย เพิ่มจุลินทรีย์ที่เป็นประโยชน์
-            ลดปัญหาดินเสื่อม ดินแน่นแข็ง ดินเป็นกรด-ด่างไม่สมดุล และช่วยให้รากพืชแข็งแรง
+            ดินเน่า เป็นผลิตภัณฑ์ปรับปรุงบำรุงดิน ช่วยฟื้นฟูสภาพดินให้ร่วนซุย
+            เพิ่มจุลินทรีย์ที่เป็นประโยชน์ ลดปัญหาดินเสื่อม ดินแน่นแข็ง
+            ดินเป็นกรด-ด่างไม่สมดุล และช่วยให้รากพืชแข็งแรง
             ดูดซึมธาตุอาหารได้ดีขึ้น
           </p>
-          <p>
-            เมื่อดินขาดจุลินทรีย์และโครงสร้างเสื่อมโทรม รากพืชจะชอนไชได้ยาก การดูดซึมธาตุอาหารลดลง
-            แม้จะใส่ปุ๋ยเท่าไหร่ก็ไม่เต็มประสิทธิภาพ ดินเน่าเข้าไปแก้ปัญหาตั้งแต่ต้นทาง
-            คือฟื้นฟูโครงสร้างและระบบนิเวศในดินให้กลับมาสมบูรณ์อีกครั้ง
-          </p>
-          <div className="intro-fact">
-            <b>เหมาะกับดินแบบไหน</b>
-            ดินที่ผ่านการใช้งานต่อเนื่อง ดินแน่น ดินขาดอินทรียวัตถุ หรือแปลงที่พืชแสดงอาการรากอ่อนแอ โตช้า
-          </div>
-          <div className="intro-fact">
-            <b>ผลลัพธ์ที่คาดหวัง</b>
-            ดินร่วนซุยขึ้น อุ้มน้ำและระบายน้ำดีขึ้น รากพืชแข็งแรง ลดความเสี่ยงโรครากเน่าโคนเน่าจากสภาพดิน
-          </div>
+          <b className="about-sub">จุดเด่น</b>
+          <ul className="about-points">
+            {HIGHLIGHTS.map((h) => (
+              <li key={h}>{h}</li>
+            ))}
+          </ul>
         </div>
-        <div className="intro-bottle" data-reveal>
-          <div className="intro-blob" aria-hidden="true" />
+        <div className="about-bottles" data-reveal>
           <Image
-            src="/products/dinnao.png"
+            src="/products/img.png"
             alt="ขวดผลิตภัณฑ์ดินเน่า"
-            width={420}
-            height={840}
-            className="intro-bottle-img"
+            width={260}
+            height={520}
+            className="about-bottle main"
           />
-          <div className="intro-chip intro-chip-1">ฟื้นฟูดินเสื่อม</div>
-          <div className="intro-chip intro-chip-2">รากแข็งแรง โตไว</div>
         </div>
       </div>
-      <Divider variant={2} />
     </section>
   );
 }

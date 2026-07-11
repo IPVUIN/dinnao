@@ -6,11 +6,10 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Channels from "@/components/Channels";
 import Intro from "@/components/Intro";
-import ProductLineup from "@/components/ProductLineup";
-import Features from "@/components/Features";
+import VideoSection from "@/components/VideoSection";
 import Crops from "@/components/Crops";
-import Why from "@/components/Why";
-import CTA from "@/components/CTA";
+import ProductLineup from "@/components/ProductLineup";
+
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -25,11 +24,10 @@ export default function Home() {
         <Hero />
         <Channels />
         <Intro />
-        <ProductLineup />
-        <Features />
         <Crops />
-        <Why />
-        <CTA />
+        <VideoSection />
+        <ProductLineup />
+
       </main>
 
       <Footer />

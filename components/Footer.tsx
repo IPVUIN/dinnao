@@ -1,16 +1,18 @@
-import { PHONE_DISPLAY, LINKS } from "@/lib/data";
+import Image from "next/image";
+import { PHONE_DISPLAY, PHONE_TEL, LINKS } from "@/lib/data";
 
 export default function Footer() {
   return (
     <footer>
       <div className="wrap foot-inner">
         <div className="foot-logo">
-          <span className="dot" />
-          ดินเน่า
+          <Image src="/logo.jpg" alt="โลโก้ Dinnao Shop" width={110} height={110} className="logo-img" />
         </div>
-        <div className="foot-meta">
-          ผลิตภัณฑ์ปรับปรุงบำรุงดิน &middot; โทร {PHONE_DISPLAY} &middot; 
-        </div>
+        <p className="foot-desc">
+          ศูนย์รวมสินค้าดินเน่าครบวงจร ฟื้นฟูดินเสีย ดินแน่น ดินแข็ง ให้กลับมาร่วนซุย
+          พร้อมให้คำแนะนำการใช้งานแบบเข้าใจง่าย สำหรับเกษตรกร
+        </p>
+        <a className="foot-phone" href={`tel:${PHONE_TEL}`}>โทร {PHONE_DISPLAY}</a>
         <div className="foot-social">
           <a href={LINKS.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook Page">
             <svg viewBox="0 0 24 24" fill="currentColor">
@@ -30,7 +32,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-     
     </footer>
   );
 }
