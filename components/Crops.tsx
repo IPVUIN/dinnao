@@ -13,10 +13,10 @@ const CROPS = [
     name: "มันสำปะหลัง",
     icon: "/plants/mun.png",
   },
-   {
-     name: "ข้าวโพด",
+  {
+    name: "ข้าวโพด",
     icon: "/plants/kaopod.png",
-   },
+  },
   {
     name: "ยางพารา",
     icon: "/plants/para.png",
