@@ -104,3 +104,7 @@ export const LINKS = {
 
 export const PHONE_DISPLAY = "063-275-4444";
 export const PHONE_TEL = "0632754444";
+
+// โดเมนจริงของเว็บไซต์ — เปลี่ยนเป็นโดเมนของคุณเมื่อ deploy
+// หรือตั้งค่าผ่าน environment variable NEXT_PUBLIC_SITE_URL
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://dinnao.shop";
