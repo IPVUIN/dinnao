@@ -19,7 +19,7 @@ const sarabun = Sarabun({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "ดินเน่า",
+  title: "ดินเน่า | ผลิตภัณฑ์ปรับปรุงดิน เพิ่มจุลินทรีย์ ฟื้นฟูดินเสื่อม",
   description:
     "ดินเน่า ผลิตภัณฑ์ปรับปรุงบำรุงดิน ฟื้นฟูดินเสื่อม เพิ่มจุลินทรีย์ที่เป็นประโยชน์ ช่วยให้รากพืชแข็งแรง ใช้ได้กับพืชทุกชนิด",
   alternates: {
