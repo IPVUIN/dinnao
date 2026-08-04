@@ -12,11 +12,34 @@ import ProductLineup from "@/components/ProductLineup";
 
 import Footer from "@/components/Footer";
 
+import { SITE_URL } from "@/lib/data";
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "ดินเน่า",
+  alternateName: ["Dinnao", "dinnao.org"],
+  url: SITE_URL,
+};
+
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "ดินเน่า",
+  url: SITE_URL,
+  logo: `${SITE_URL}/logo.png`,
+};
 export default function Home() {
   useReveal();
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([websiteSchema, orgSchema]),
+        }}
+      />
       <TopBar />
       <Header />
 
@@ -27,7 +50,6 @@ export default function Home() {
         <Crops />
         <VideoSection />
         <ProductLineup />
-
       </main>
 
       <Footer />
