@@ -18,15 +18,15 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "ดินเน่า",
-  alternateName: ["Dinnao", "dinnao.org"],
-  url: SITE_URL,
+  alternateName: ["Dinnao"],
+  url: `${SITE_URL}/`,
 };
 
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "ดินเน่า",
-  url: SITE_URL,
+  url: `${SITE_URL}/`,
   logo: `${SITE_URL}/logo.png`,
 };
 export default function Home() {
