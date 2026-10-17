@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="nav">
       <div className="nav-inner">
-        <a href="#top" className="logo" aria-label="Dinnao Shop กลับขึ้นด้านบน">
+        <a href="#top" className="logo" aria-label="ดินเน่า กลับขึ้นด้านบน">
           <Image src="/logo.jpg" alt="โลโก้ Dinnao Shop" width={52} height={52} className="logo-img" />
         </a>
         <nav className="links">
