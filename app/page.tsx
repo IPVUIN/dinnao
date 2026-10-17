@@ -27,7 +27,7 @@ const orgSchema = {
   "@type": "Organization",
   name: "ดินเน่า",
   url: `${SITE_URL}/`,
-  logo: `${SITE_URL}/logo.png`,
+  logo: `${SITE_URL}/logo.jpg`,
 };
 export default function Home() {
   useReveal();
