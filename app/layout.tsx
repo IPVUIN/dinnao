@@ -18,11 +18,12 @@ const sarabun = Sarabun({
 });
 
 export const metadata: Metadata = {
+  applicationName: "ดินเน่า",
   icons: {
     icon: "/favicon.ico",
   },
   metadataBase: new URL(SITE_URL),
-  title: "ดินเน่า | ผลิตภัณฑ์ปรับปรุงดิน เพิ่มจุลินทรีย์ ฟื้นฟูดินเสื่อม",
+  title: "ดินเน่า | ผลิตภัณฑ์ปรับปรุงดิน เพิ่มจุลินทรีย์ และฟื้นฟูดินเสื่อม",
   description:
     "ดินเน่า ผลิตภัณฑ์ปรับปรุงบำรุงดิน ฟื้นฟูดินเสื่อม เพิ่มจุลินทรีย์ที่เป็นประโยชน์ ช่วยให้รากพืชแข็งแรง ใช้ได้กับพืชทุกชนิด",
   alternates: {
@@ -37,7 +38,6 @@ export const metadata: Metadata = {
     description:
       "ดินเน่า ผลิตภัณฑ์ปรับปรุงบำรุงดิน ฟื้นฟูดินเสื่อม เพิ่มจุลินทรีย์ที่เป็นประโยชน์ ช่วยให้รากพืชแข็งแรง ใช้ได้กับพืชทุกชนิด",
   },
-  applicationName: "ดินเน่า",
 };
 
 const themeInit = `try{var t=localStorage.getItem("theme");if(t!=="dark"&&t!=="light"){t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.dataset.theme=t}catch(e){}`;
