@@ -20,7 +20,8 @@ export const products: Product[] = [
       "ช่วยให้พืชดูดซึมธาตุอาหารได้ดีขึ้น",
       "ใช้ได้กับพืชทุกชนิด",
     ],
-    suitableFor: "นาข้าว อ้อย มันสำปะหลัง ข้าวโพด ยางพารา ปาล์ม ไม้ผล และผักทุกชนิด",
+    suitableFor:
+      "นาข้าว อ้อย มันสำปะหลัง ข้าวโพด ยางพารา ปาล์ม ไม้ผล และผักทุกชนิด",
     image: "/products/dinnao.png",
   },
   {
@@ -90,7 +91,8 @@ export const products: Product[] = [
       "ช่วยให้ต้นพืชสมบูรณ์ แข็งแรง",
       "ใช้ร่วมกับดินเน่าและผลิตภัณฑ์อื่นได้",
     ],
-    suitableFor: "พืชทุกชนิด โดยเฉพาะพื้นที่ที่มีปัญหาโรครากเน่า โคนเน่า และเชื้อราในดิน",
+    suitableFor:
+      "พืชทุกชนิด โดยเฉพาะพื้นที่ที่มีปัญหาโรครากเน่า โคนเน่า และเชื้อราในดิน",
     image: "/products/prabman.png",
   },
 ];
@@ -107,4 +109,5 @@ export const PHONE_TEL = "0632754444";
 
 // โดเมนจริงของเว็บไซต์ — เปลี่ยนเป็นโดเมนของคุณเมื่อ deploy
 // หรือตั้งค่าผ่าน environment variable NEXT_PUBLIC_SITE_URL
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://dinnao.org";
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.dinnao.org";
